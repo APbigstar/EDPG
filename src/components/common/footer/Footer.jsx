@@ -3,6 +3,7 @@ import { blog } from "../../../dummydata"
 import "./footer.css"
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
   return (
     <>
       <section className='newletter'>
@@ -90,7 +91,7 @@ const Footer = () => {
       </footer>
       <div className='legal'>
         <p>
-          Copyright ©2022 All rights reserved | This template is made with <i className='fa fa-heart'></i> by GorkhCoder
+          Copyright {currentYear} All rights reserved
         </p>
       </div>
     </>
