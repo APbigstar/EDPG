@@ -2,25 +2,20 @@ export const homeAbout = [
   {
     id: 1,
     cover: "https://img.icons8.com/dotty/80/000000/storytelling.png",
-    title: "Online Courses",
-    desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    title: "Online  Courses Through Games",
+    desc: "Discover a unique learning experience that turns complex subjects through games!",
   },
   {
-    id: 1,
+    id: 2,
     cover: "https://img.icons8.com/ios/80/000000/diploma.png",
-    title: "Earn A Certificates",
-    desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    title: "Get a Degree",
+    desc: "Enjoy our games and start leveling up your computer science skills today!",
   },
-  {
-    id: 1,
-    cover: "https://img.icons8.com/ios/80/000000/athlete.png",
-    title: "Learn with Expert",
-    desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
-  },
-]
+];
 export const awrapper = [
   {
-    cover: "https://img.icons8.com/external-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto/80/ffffff/external-graduation-education-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto.png",
+    cover:
+      "https://img.icons8.com/external-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto/80/ffffff/external-graduation-education-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto.png",
     data: "3,000",
     title: "SUCCESS STORIES",
   },
@@ -31,7 +26,8 @@ export const awrapper = [
     title: "TRUSTED TUTORS",
   },
   {
-    cover: "https://img.icons8.com/external-outline-icons-maxicons/80/ffffff/external-calender-insurance-outline-outline-icons-maxicons.png",
+    cover:
+      "https://img.icons8.com/external-outline-icons-maxicons/80/ffffff/external-calender-insurance-outline-outline-icons-maxicons.png",
     data: "1,000",
     title: "SCHEDULES",
   },
@@ -40,7 +36,7 @@ export const awrapper = [
     data: "587",
     title: "COURSES",
   },
-]
+];
 export const coursesCard = [
   {
     id: 1,
@@ -55,20 +51,6 @@ export const coursesCard = [
     ],
     priceAll: "$100 All Course",
     pricePer: "$15 per month",
-  },
-  {
-    id: 2,
-    cover: "../images/courses/c2.png",
-    coursesName: "Enhancing Adobe Photoshop CC 2020 Skills",
-    courTeacher: [
-      {
-        dcover: "./images/back.webp",
-        name: "by Ram Gurung",
-        totalTime: "30 lectures (125 hrs)",
-      },
-    ],
-    priceAll: "$200 All Course",
-    pricePer: "$25 per month",
   },
   {
     id: 3,
@@ -87,7 +69,7 @@ export const coursesCard = [
   {
     id: 4,
     cover: "../images/courses/c4.png",
-    coursesName: "Introducing to Programming with WordPress",
+    coursesName: "Introducing to Programming with C#",
     courTeacher: [
       {
         dcover: "./images/back.webp",
@@ -168,81 +150,51 @@ export const coursesCard = [
     priceAll: "$20 All Course",
     pricePer: "$3 per month",
   },
-]
+];
 export const online = [
   {
-    cover: "./images/courses/online/o1.png",
-    hoverCover: "./images/courses/online/o1.1.png",
-    courseName: "UI/UX Design Courses",
-    course: "25 Courses",
+    cover: "./images/courses/online/Python.png",
+    hoverCover: "./images/courses/online/Python.png",
+    courseName: "Python",
+    course:
+      "Used by major organizations, such as Google, Youtube, and NASA, Python is object-oriented and used for web and internet development.",
   },
   {
-    cover: "./images/courses/online/o2.png",
-    hoverCover: "./images/courses/online/o2.1.png",
-    courseName: "Art & Design",
-    course: "25 Courses",
+    cover: "./images/courses/online/Java.png",
+    hoverCover: "./images/courses/online/Java.png",
+    courseName: "Java",
+    course:
+      "Ideal for web-based development, Java is an object-oriented, high-level language used to develop applications for video games and mobile apps.",
   },
   {
-    cover: "./images/courses/online/o3.png",
-    hoverCover: "./images/courses/online/o3.1.png",
+    cover: "./images/courses/online/JavaScript.png",
+    hoverCover: "./images/courses/online/JavaScript.png",
     courseName: "Computer Science",
-    course: "10 Courses",
+    course:
+      "Used for front end website development and gaming development, JavaScript is used to manipulate various page elements to make them more dynamic.",
   },
   {
-    cover: "./images/courses/online/o4.png",
-    hoverCover: "./images/courses/online/o4.1.png",
-    courseName: "History & Archeologic",
-    course: "15 Courses",
+    cover: "./images/courses/online/PHP.png",
+    hoverCover: "./images/courses/online/PHP.png",
+    courseName: "PHP",
+    course:
+      "Scripting language and general-purpose computer programming language. The beginner-friendly coding language also offers many advanced features for professionals.",
   },
   {
-    cover: "./images/courses/online/o5.png",
-    hoverCover: "./images/courses/online/o5.1.png",
-    courseName: "Software Engineering",
-    course: "30 Courses",
+    cover: "./images/courses/online/csharp.png",
+    hoverCover: "./images/courses/online/csharp.png",
+    courseName: "CSharp",
+    course:
+      "Microsoft created C#, a general-purpose, object-oriented coding language that many people find easier to learn than C++. ",
   },
   {
-    cover: "./images/courses/online/o6.png",
-    hoverCover: "./images/courses/online/o6.1.png",
-    courseName: "Information Software",
-    course: "60 Courses",
+    cover: "./images/courses/online/sql.png",
+    hoverCover: "./images/courses/online/sql.png",
+    courseName: "SQL",
+    course:
+      "Very popular and works well with other programming languages. Many applications use SQL to update and retrieve data.",
   },
-  {
-    cover: "./images/courses/online/o7.png",
-    hoverCover: "./images/courses/online/o7.1.png",
-    courseName: "Health & Fitness",
-    course: "10 Courses",
-  },
-  {
-    cover: "./images/courses/online/o8.png",
-    hoverCover: "./images/courses/online/o8.1.png",
-    courseName: "Marketing",
-    course: "30 Courses",
-  },
-  {
-    cover: "./images/courses/online/o9.png",
-    hoverCover: "./images/courses/online/o9.1.png",
-    courseName: "Graphic Design",
-    course: "80 Courses",
-  },
-  {
-    cover: "./images/courses/online/o10.png",
-    hoverCover: "./images/courses/online/o10.1.png",
-    courseName: "Music",
-    course: "120 Courses",
-  },
-  {
-    cover: "./images/courses/online/o11.png",
-    hoverCover: "./images/courses/online/o11.1.png",
-    courseName: "Business Administration",
-    course: "17 Courses",
-  },
-  {
-    cover: "./images/courses/online/o12.png",
-    hoverCover: "./images/courses/online/o12.1.png",
-    courseName: "Web Management",
-    course: "17 Courses",
-  },
-]
+];
 export const team = [
   {
     cover: "./images/team/t1.webp",
@@ -284,29 +236,29 @@ export const team = [
     name: "Ph.D Brian Wooden",
     work: "DEVELOPER AND LEAD INSTRUCTOR",
   },
-]
+];
 export const price = [
   {
     name: "BASIC PLAN",
     price: "49K",
-    desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    desc: "Start your journey towards a computer science degree with our gamified core courses, dedicated support, and vibrant community access.",
   },
   {
     name: "BEGINNER PLAN",
     price: "79K",
-    desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    desc: "Dive into a more immersive learning experience with gamified course selection, priority support, and exclusive webinars hosted by industry experts.",
   },
   {
     name: "PREMIUM PLAN",
     price: "109k",
-    desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    desc: "Elevate your education with gamified full course access, personalized mentorship from gaming professionals, and VIP entry to game-themed events and workshops.",
   },
   {
     name: "ULTIMATE PLAN",
     price: "149K",
-    desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    desc: "Unleash the power of gamification with exclusive access to our entire gamified curriculum, one-on-one coaching by gaming industry leaders, and priority access to new game-inspired content and features.",
   },
-]
+];
 export const faq = [
   {
     title: "How to Enroll This Online Courses?",
@@ -332,7 +284,7 @@ export const faq = [
     title: "How It is hidden by default, until the collapse?",
     desc: "It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.",
   },
-]
+];
 export const blog = [
   {
     id: 1,
@@ -388,27 +340,27 @@ export const blog = [
     desc: "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
     cover: "../images/blog/b6.webp",
   },
-]
+];
 export const testimonal = [
   {
     id: 1,
     name: "ROGER SCOTT",
-    post: "MARKETING MANAGER",
-    desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
-    cover: "./images/testo/t1.webp",
+    post: "Associate Professor Of Mathematics And Director Of Online Instruction",
+    desc: "The ability to make it through a strong computer science degree, at any level is priceless for students in both modern computing and everyday life. Higher education has been a catalyst in my life. I want to help others have the same opportunities.",
+    cover: "./images/testo/jon.png",
   },
   {
     id: 2,
     name: "ROGER SCOTT",
-    post: "MARKETING MANAGER",
-    desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
-    cover: "./images/testo/t2.webp",
+    post: "Software Engineer",
+    desc: "Your skills from your previous career are totally relevant to tech. Lean into those skills and don’t forget about what you learned there. Also, if you love what you do and you are able to make the transition to tech, go for it! You will never look back, trust me.",
+    cover: "./images/testo/paige.jpg",
   },
   {
     id: 3,
     name: "ROGER SCOTT",
-    post: "MARKETING MANAGER",
-    desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
-    cover: "./images/testo/t3.webp",
+    post: "Systems Manager",
+    desc: "The biggest surprise is how easy it can be to work in systems. It's sort of like magic before you know how a trick is done—it's amazing! At first it seems like you could never understand how the magician performs the trick, but then when you're shown the process, it seems so simple.",
+    cover: "./images/testo/steve.png",
   },
-]
+];

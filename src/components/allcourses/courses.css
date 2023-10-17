@@ -67,7 +67,7 @@
 .online .box {
   box-shadow: 0 5px 25px -2px rgb(0 0 0 / 6%);
   background-color: #fff;
-  padding: 30px 20px;
+  padding: 30px 41px;
   transition: 0.5s;
 }
 .online .img {
@@ -88,12 +88,14 @@
   line-height: 30px;
 }
 .online span {
-  background-color: #f8f8f8;
-  padding: 5px 20px;
   font-weight: 500;
   font-size: 15px;
-  color: #1eb2a6;
+  color: black;
   border-radius: 5px;
+}
+.online .box:hover span {
+  color: white;
+
 }
 .online .box .show {
   opacity: 0;

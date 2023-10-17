@@ -15,7 +15,7 @@ body {
 }
 .flexSB {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 .icon {
   width: 40px;

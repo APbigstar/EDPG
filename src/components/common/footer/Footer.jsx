@@ -21,13 +21,12 @@ const Footer = () => {
       <footer>
         <div className='container padding'>
           <div className='box logo'>
-            <h1>ACADEMIA</h1>
-            <span>ONLINE EDUCATION & LEARNING</span>
-            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-
-            <i className='fab fa-facebook-f icon'></i>
-            <i className='fab fa-twitter icon'></i>
-            <i className='fab fa-instagram icon'></i>
+            <img src="./images/footerlogo.png" alt="logo" width="200px" />
+            <div className="footer-social-icons">
+              <i className='fab fa-facebook-f icon'></i>
+              <i className='fab fa-twitter icon'></i>
+              <i className='fab fa-instagram icon'></i>
+            </div>
           </div>
           <div className='box link'>
             <h3>Explore</h3>

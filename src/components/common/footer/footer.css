@@ -110,3 +110,11 @@ footer .last i {
 .legal i {
   color: #1eb2a6;
 }
+
+.box.logo {
+  text-align: center;
+}
+.footer-social-icons {
+  margin-top: 35px;
+  text-align: center;
+}
