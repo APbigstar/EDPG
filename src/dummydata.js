@@ -261,84 +261,91 @@ export const price = [
 ];
 export const faq = [
   {
-    title: "How to Enroll This Online Courses?",
-    desc: "This is the first item's accordion body. It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.",
+    title:
+      "What is the concept of earning a computer science degree through games?",
+    desc: "Earning a computer science degree through games is an innovative approach to learning. It combines the rigor of a traditional computer science curriculum with gamified elements, making the learning process engaging and interactive. Students can progress through their coursework while completing game-based challenges and activities.",
   },
   {
-    title: "Where It is hidden by default, until the collapse?",
-    desc: "It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.",
+    title:
+      "What are the key benefits of pursuing a computer science degree through games?",
+    desc: "Pursuing a computer science degree through games offers several advantages. It makes learning more enjoyable and encourages active participation. It also enhances problem-solving skills and helps students apply theoretical knowledge in practical scenarios. Furthermore, it provides a unique and immersive learning experience.",
   },
   {
-    title: "How It is hidden by default, until the collapse?",
-    desc: "It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.",
+    title:
+      "Are the degrees earned through this platform recognized by institutions and employers?",
+    desc: "Yes, the degrees earned through our platform are recognized by accredited institutions and employers. We have partnered with reputable universities and educational organizations to ensure that the degree programs meet rigorous academic standards. Graduates can confidently showcase their credentials to prospective employers.",
   },
   {
-    title: "How to Enroll This Online Courses?",
-    desc: "This is the first item's accordion body. It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.",
+    title: "What types of games are integrated into the learning process?",
+    desc: "We incorporate a variety of game types, including multiple-choice quizzes, flashcards with question-and-answer challenges, and fill-in-the-blank exercises. These games are designed to reinforce your understanding of computer science concepts and make learning both fun and effective.",
   },
   {
-    title: "Where It is hidden by default, until the collapse?",
-    desc: "It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.",
+    title:
+      "Is this program suitable for individuals with no prior computer science experience?",
+    desc: "Yes, our program is designed to accommodate individuals with varying levels of computer science experience. We offer courses ranging from introductory to advanced levels. Whether you're new to the field or seeking to deepen your knowledge, there are courses tailored to your needs.",
   },
   {
-    title: "How It is hidden by default, until the collapse?",
-    desc: "It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.",
+    title:
+      "Can I study at my own pace, or are there specific deadlines for assignments and exams?",
+    desc: "We offer flexibility in your study schedule. While some courses have suggested deadlines to help you stay on track, you can typically study at your own pace. This allows you to balance your education with other commitments and tailor your learning experience to your unique needs and preferences.",
   },
 ];
 export const blog = [
   {
     id: 1,
-    type: "admin",
-    date: "JAN. 18, 2021",
+    type: "Eira May",
+    date: "October 17, 2023",
     com: "3 COMMENTS ",
-    title: "Build your Dream Software & Engineering Career",
-    desc: "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-    cover: "../images/blog/b1.webp",
+    title:
+      "The company making it easier to turn your coffee machine into a robot",
+    desc: "Ben welcomes back friend of the show Eliot Horowitz, cofounder and CTO of Viam, who’s also the cofounder and former CTO of MongoDB. They talk about the current status of robot assistants, why Viam is hardware-agnostic, and building robots to train cats (good luck with that).",
+    cover: "../images/blog/blog-1.webp",
   },
   {
     id: 2,
-    type: "admin",
-    date: "API. 25, 2022",
+    type: "Ryan Donovan",
+    date: "October 16, 2023",
     com: "5 COMMENTS ",
-    title: "Build your Dream Software & Engineering Career",
-    desc: "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-    cover: "../images/blog/b2.webp",
+    title: "Platform engineering is just DevOps with a product mindset",
+    desc: "DevOps has helped lots of organizations improve their processes, but others have only seen frustration and burnout.",
+    cover: "../images/blog/blog-2.webp",
   },
   {
     id: 3,
-    type: "user",
-    date: "MAY. 15, 2022",
+    type: "Prashanth Chandrasekar",
+    date: "October 16, 2023",
     com: "10 COMMENTS ",
-    title: "Build your Dream Software & Engineering Career",
-    desc: "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-    cover: "../images/blog/b3.webp",
+    title: "A Message from Prashanth Chandrasekar, CEO Stack Overflow",
+    desc: "Over the last 15 years, we’ve built Stack Overflow into an industry-crucial knowledge base for millions of developers and technologists. During this time we’ve experienced years filled with opportunities and challenges. This year is no different.",
+    cover: "../images/blog/blog-3.webp",
   },
   {
     id: 4,
-    type: "admin",
-    date: "JAN. 02, 2022",
+    type: "Ben Popper",
+    date: "October 7, 2023",
     com: "3 COMMENTS ",
-    title: "Build your Dream Software & Engineering Career",
-    desc: "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-    cover: "../images/blog/b4.webp",
+    title: "Computers are learning to decode the language of our minds",
+    desc: "A series of amazing breakthroughs are allowing paralyzed people to speak and emote. With each passing month, we get closer to a brain-computer interface that might unlock some of the deepest mysteries of our grey matter.",
+    cover: "../images/blog/blog-4.webp",
   },
   {
     id: 5,
-    type: "admin",
-    date: "DEC. 14, 2022",
+    type: "Wouter de Kort",
+    date: "September 18, 2023",
     com: "3 COMMENTS ",
-    title: "Build your Dream Software & Engineering Career",
-    desc: "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-    cover: "../images/blog/b5.webp",
+    title:
+      "Journey to the cloud part II: Migrating Stack Overflow for Teams to Azure",
+    desc: "We needed to remove the dependency on the Sites database and contain all Teams infrastructure and data within the TFZ which is all part of Phase II.",
+    cover: "../images/blog/blog-5.webp",
   },
   {
     id: 6,
-    type: "user",
-    date: "JAN. 18, 2021",
+    type: "Felix Baum",
+    date: "August 30, 2023",
     com: "12 COMMENTS ",
-    title: "Build your Dream Software & Engineering Career",
-    desc: "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-    cover: "../images/blog/b6.webp",
+    title: "Fitting AI models in your pocket with quantization",
+    desc: "A Qualcomm expert breaks down some of the tools and techniques they use to fit GenAI models on a smartphone.",
+    cover: "../images/blog/blog-6.webp",
   },
 ];
 export const testimonal = [
