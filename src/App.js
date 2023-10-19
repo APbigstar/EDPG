@@ -9,6 +9,8 @@ import Blog from "./components/blog/Blog";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/common/footer/Footer";
 import Home from "./components/home/Home";
+import ScrollButton from "./components/scrollbtn/ScrollButton";
+
 function App() {
   return (
     <>
@@ -24,6 +26,7 @@ function App() {
           <Route exact path="/contact" component={Contact} />
         </Switch>
         <Footer />
+        <ScrollButton />
       </Router>
     </>
   );
