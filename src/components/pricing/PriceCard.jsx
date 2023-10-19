@@ -11,6 +11,10 @@ const PriceCard = () => {
             <span>$</span>
             {val.price}
           </h1>
+          <h2>
+            <span>$</span>
+            {val.yrPrice}
+          </h2>
           <p>{val.desc}</p>
           <button className='outline-btn'>GET STARTED</button>
         </div>

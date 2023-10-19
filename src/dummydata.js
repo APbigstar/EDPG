@@ -16,7 +16,7 @@ export const awrapper = [
   {
     cover:
       "https://img.icons8.com/external-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto/80/ffffff/external-graduation-education-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto.png",
-    data: "3,000",
+    data: "800",
     title: "SUCCESS STORIES",
   },
 
@@ -28,12 +28,12 @@ export const awrapper = [
   {
     cover:
       "https://img.icons8.com/external-outline-icons-maxicons/80/ffffff/external-calender-insurance-outline-outline-icons-maxicons.png",
-    data: "1,000",
+    data: "500",
     title: "SCHEDULES",
   },
   {
     cover: "https://img.icons8.com/ios/80/ffffff/macbook-idea--v3.png",
-    data: "587",
+    data: "15",
     title: "COURSES",
   },
 ];
@@ -240,22 +240,26 @@ export const team = [
 export const price = [
   {
     name: "BASIC PLAN",
-    price: "49K",
+    price: "49/mo",
+    yrPrice: "38/yr",
     desc: "Start your journey towards a computer science degree with our gamified core courses, dedicated support, and vibrant community access.",
   },
   {
     name: "BEGINNER PLAN",
-    price: "79K",
+    price: "79/mo",
+    yrPrice: "64/yr",
     desc: "Dive into a more immersive learning experience with gamified course selection, priority support, and exclusive webinars hosted by industry experts.",
   },
   {
     name: "PREMIUM PLAN",
-    price: "109k",
+    price: "109/mo",
+    yrPrice: "89/yr",
     desc: "Elevate your education with gamified full course access, personalized mentorship from gaming professionals, and VIP entry to game-themed events and workshops.",
   },
   {
     name: "ULTIMATE PLAN",
-    price: "149K",
+    price: "149/mo",
+    yrPrice: "100/yr",
     desc: "Unleash the power of gamification with exclusive access to our entire gamified curriculum, one-on-one coaching by gaming industry leaders, and priority access to new game-inspired content and features.",
   },
 ];
