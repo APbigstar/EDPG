@@ -241,25 +241,25 @@ export const price = [
   {
     name: "BASIC PLAN",
     price: "49/mo",
-    yrPrice: "38/yr",
+    yrPrice: "499/yr",
     desc: "Start your journey towards a computer science degree with our gamified core courses, dedicated support, and vibrant community access.",
   },
   {
     name: "BEGINNER PLAN",
     price: "79/mo",
-    yrPrice: "64/yr",
+    yrPrice: "807/yr",
     desc: "Dive into a more immersive learning experience with gamified course selection, priority support, and exclusive webinars hosted by industry experts.",
   },
   {
     name: "PREMIUM PLAN",
     price: "109/mo",
-    yrPrice: "89/yr",
+    yrPrice: "1,114/yr",
     desc: "Elevate your education with gamified full course access, personalized mentorship from gaming professionals, and VIP entry to game-themed events and workshops.",
   },
   {
     name: "ULTIMATE PLAN",
     price: "149/mo",
-    yrPrice: "100/yr",
+    yrPrice: "1,522/yr",
     desc: "Unleash the power of gamification with exclusive access to our entire gamified curriculum, one-on-one coaching by gaming industry leaders, and priority access to new game-inspired content and features.",
   },
 ];
