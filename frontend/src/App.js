@@ -1,22 +1,57 @@
-import { useState, useEffect } from "react";
-import Header from "./components/common/header/Header";
-import { useLocation, Switch, Route } from "react-router-dom";
-import About from "./components/about/About";
-import CourseHome from "./components/allcourses/CourseHome";
-import Team from "./components/team/Team";
-import Pricing from "./components/pricing/Pricing";
-import Blog from "./components/blog/Blog";
-import Contact from "./components/contact/Contact";
-import Footer from "./components/common/footer/Footer";
-import Home from "./components/home/Home";
-import ScrollButton from "./components/scrollbtn/ScrollButton";
-import LoginPage from "./components/auth/pages/LoginPage";
-import SignupPage from "./components/auth/pages/SignupPage";
-import "./App.css";
+import React, { useMemo, useState, useEffect } from "react";
+import { CssBaseline, ThemeProvider } from "@mui/material";
+import { createTheme } from "@mui/material/styles";
+import { useSelector } from "react-redux";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Navigate,
+  useLocation,
+} from "react-router-dom";
 
-function App() {
+// Theme
+import { themeSettings } from "theme";
+
+// Scenes
+import {
+  Layout,
+  Dashboard,
+  Products,
+  Customers,
+  Transactions,
+  Geography,
+  Overview,
+  Daily,
+  Monthly,
+  Breakdown,
+  Admin,
+  Performance,
+  About,
+  Header,
+  CourseHome,
+  Team,
+  Pricing,
+  Blog,
+  Contact,
+  Footer,
+  Home,
+  ScrollButton,
+  LoginPage,
+  SignupPage,
+} from "scenes";
+
+// App
+const App = () => {
+  // Dark/Light mode
+  const mode = useSelector((state) => state.global.mode);
+  // theme setting
+  const theme = useMemo(() => createTheme(themeSettings(mode)), [mode]);
+
   const location = useLocation();
+  console.log(location.pathname.includes("admin"));
   const [isSignIn, setIsSignIn] = useState(false);
+  const [isAdmin, setIsAdmin] = useState(false);
   useEffect(() => {
     if (
       location.pathname.includes("signin") ||
@@ -26,29 +61,54 @@ function App() {
     } else {
       setIsSignIn(false);
     }
+    if (location.pathname.includes("admin")) {
+      setIsAdmin(true);
+    } else {
+      setIsAdmin(false);
+    }
   }, [location.pathname]);
+
   return (
-    <>
-      {!isSignIn && <Header />}
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/about" component={About} />
-        <Route exact path="/courses" component={CourseHome} />
-        <Route exact path="/team" component={Team} />
-        <Route exact path="/pricing" component={Pricing} />
-        <Route exact path="/journal" component={Blog} />
-        <Route exact path="/contact" component={Contact} />
-        <Route path="/signin" component={LoginPage} />
-        <Route path="/signup" component={SignupPage} />
-      </Switch>
-      {!isSignIn && (
-        <>
-          <Footer />
+    <div className="app">
+      <>
+        {/* Theme Provider */}
+        <ThemeProvider theme={theme}>
+          <CssBaseline />
+          {!isSignIn && !isAdmin && <Header />}
+          <Routes>
+            <Route element={<Layout />}>
+              <Route
+                path="/admin"
+                element={<Navigate to="/admin/dashboard" replace />}
+              />
+              <Route path="/admin/dashboard" element={<Dashboard />} />
+              <Route path="/admin/products" element={<Products />} />
+              <Route path="/admin/customers" element={<Customers />} />
+              <Route path="/admin/transactions" element={<Transactions />} />
+              <Route path="/admin/geography" element={<Geography />} />
+              <Route path="/admin/overview" element={<Overview />} />
+              <Route path="/admin/daily" element={<Daily />} />
+              <Route path="/admin/monthly" element={<Monthly />} />
+              <Route path="/admin/breakdown" element={<Breakdown />} />
+              <Route path="/admin/admin" element={<Admin />} />
+              <Route path="/admin/performance" element={<Performance />} />
+            </Route>
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/about" element={<About />} />
+            <Route exact path="/courses" element={<CourseHome />} />
+            <Route exact path="/team" element={<Team />} />
+            <Route exact path="/pricing" element={<Pricing />} />
+            <Route exact path="/journal" element={<Blog />} />
+            <Route exact path="/contact" element={<Contact />} />
+            <Route path="/signin" element={<LoginPage />} />
+            <Route path="/signup" element={<SignupPage />} />
+          </Routes>
+          {!isSignIn && !isAdmin && <Footer />}
           <ScrollButton />
-        </>
-      )}
-    </>
+        </ThemeProvider>
+      </>
+    </div>
   );
-}
+};
 
 export default App;

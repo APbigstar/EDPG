@@ -7,7 +7,7 @@ export const counterSlice = createSlice({
   },
   reducers: {
     setLoginState: (state) => {
-      state = !state;
+      state.value = !state.value;
     },
   },
 });
