@@ -2,13 +2,7 @@ import React, { useMemo, useState, useEffect } from "react";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { createTheme } from "@mui/material/styles";
 import { useSelector } from "react-redux";
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-  Navigate,
-  useLocation,
-} from "react-router-dom";
+import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 
 // Theme
 import { themeSettings } from "theme";
@@ -18,7 +12,7 @@ import {
   Layout,
   Dashboard,
   Products,
-  Customers,
+  Users,
   Transactions,
   Geography,
   Overview,
@@ -43,13 +37,10 @@ import {
 
 // App
 const App = () => {
-  // Dark/Light mode
   const mode = useSelector((state) => state.global.mode);
-  // theme setting
   const theme = useMemo(() => createTheme(themeSettings(mode)), [mode]);
 
   const location = useLocation();
-  console.log(location.pathname.includes("admin"));
   const [isSignIn, setIsSignIn] = useState(false);
   const [isAdmin, setIsAdmin] = useState(false);
   useEffect(() => {
@@ -79,11 +70,11 @@ const App = () => {
             <Route element={<Layout />}>
               <Route
                 path="/admin"
-                element={<Navigate to="/admin/dashboard" replace />}
+                element={<Navigate to="/admin/dashboard" />}
               />
               <Route path="/admin/dashboard" element={<Dashboard />} />
               <Route path="/admin/products" element={<Products />} />
-              <Route path="/admin/customers" element={<Customers />} />
+              <Route path="/admin/users" element={<Users />} />
               <Route path="/admin/transactions" element={<Transactions />} />
               <Route path="/admin/geography" element={<Geography />} />
               <Route path="/admin/overview" element={<Overview />} />

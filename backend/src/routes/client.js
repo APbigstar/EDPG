@@ -11,10 +11,9 @@ const {
 const router = express.Router();
 
 // Routes
-router.post("/", userVerification);
 router.get("/products", getProducts);
-router.get("/customers", getCustomers);
+router.get("/users", getCustomers);
 router.get("/transactions", getTransactions);
 router.get("/geography", getGeography);
 
-module.exports.router;
+module.exports = router;

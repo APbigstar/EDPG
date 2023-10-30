@@ -1,7 +1,6 @@
 const User = require("../models/User");
 require("dotenv").config();
 const jwt = require("jsonwebtoken");
-const reateLimit = require("express-rate-limit");
 
 module.exports.userVerification = (req, res) => {
   const token = req.cookies.token;

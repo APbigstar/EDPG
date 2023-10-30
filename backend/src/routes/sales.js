@@ -5,7 +5,6 @@ const { getSales } = require("../controllers/admin/sales.js");
 const router = express.Router();
 
 // Routes
-router.post("/", userVerification);
 router.get("/sales", getSales);
 
-module.exports.router;
+module.exports = router;

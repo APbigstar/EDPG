@@ -14,4 +14,4 @@ const AffiliateStatSchema = new mongoose.Schema(
 
 const AffiliateStat = mongoose.model("AffiliateStat", AffiliateStatSchema);
 
-module.exports.AffiliateStat;
+module.exports = AffiliateStat;

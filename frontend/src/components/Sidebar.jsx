@@ -43,12 +43,12 @@ const navItems = [
     text: "Client Facing",
     icon: null,
   },
+  // {
+  //   text: "Products",
+  //   icon: <ShoppingCartOutlined />,
+  // },
   {
-    text: "Products",
-    icon: <ShoppingCartOutlined />,
-  },
-  {
-    text: "Customers",
+    text: "Users",
     icon: <Groups2Outlined />,
   },
   {
@@ -144,15 +144,15 @@ const Sidebar = ({
                     variant="h4"
                     fontWeight="bold"
                     onClick={() => {
-                      navigate("/dashboard");
+                      navigate("admin/dashboard");
                       setActive("dashboard");
                     }}
                     sx={{
                       cursor: "pointer",
                     }}
-                    title="ECOMVISION"
+                    title="EDPG"
                   >
-                    ECOMVISION
+                    <img src="/images/logo.png" alt="logo" width="150px" />
                   </Typography>
                 </Box>
                 {/* Mobile Sidebar Toggle Icon */}

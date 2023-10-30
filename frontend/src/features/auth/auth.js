@@ -6,11 +6,11 @@ export const counterSlice = createSlice({
     value: false,
   },
   reducers: {
-    setLoginState: (state) => {
-      state.value = !state.value;
+    setIsLoggedin: (state, action) => {
+      state.value = action.payload;
     },
   },
 });
 
-export const { setLoginState } = counterSlice.actions;
+export const { setIsLoggedin } = counterSlice.actions;
 export default counterSlice.reducer;

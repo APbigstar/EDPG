@@ -3,16 +3,21 @@ import { Link } from "react-router-dom";
 import Head from "./Head";
 import "./header.css";
 
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { setIsLoggedin } from "../../../../features/auth/auth";
+
+// import { useSelector } from "react-redux";
 
 const Header = () => {
   const [click, setClick] = useState(false);
-  const [authTitle, setAuthTitle] = useState("Sign In");
 
   const loginState = useSelector((state) => state.authSetter.value);
-  if (loginState) {
-    setAuthTitle("Sign Out");
-  }
+  const dispatch = useDispatch();
+
+  const logout = () => {
+    localStorage.removeItem("login-token");
+    dispatch(setIsLoggedin(false));
+  };
 
   return (
     <>
@@ -47,7 +52,11 @@ const Header = () => {
           </ul>
           <div className="start">
             <div className="button">
-              <Link to="/signin">{authTitle}</Link>
+              {loginState ? (
+                <Link onClick={logout}>Sign Out</Link>
+              ) : (
+                <Link to="/signin">Sign In</Link>
+              )}
             </div>
           </div>
           <button className="toggle" onClick={() => setClick(!click)}>

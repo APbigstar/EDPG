@@ -7,7 +7,7 @@ import DeleteIcon from '@mui/icons-material/DeleteOutlined';
 import SaveIcon from '@mui/icons-material/Save';
 import CancelIcon from '@mui/icons-material/Close';
 
-import { useGetAdminsQuery } from "state/api";
+import { useGetUsersQuery } from "state/api";
 
 import { Header } from "components";
 
@@ -50,7 +50,7 @@ export default function Users() {
   const [rows, setRows] = React.useState([]);
   const [rowModesModel, setRowModesModel] = React.useState({});
 
-  const { data, isLoading } = useGetAdminsQuery();
+  const { data, isLoading } = useGetUsersQuery();
 
   const theme = useTheme();
 

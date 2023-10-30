@@ -3,16 +3,19 @@ import { loginFields } from "../../dummydata";
 import Input from "./Input";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import { useCookies } from "react-cookie";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
+import { useSelector, useDispatch } from "react-redux";
+import { setIsLoggedin } from "../../../features/auth/auth";
 
 const fields = loginFields;
 let fieldsState = {};
 fields.forEach((field) => (fieldsState[field.id] = ""));
 
 export default function Login() {
-  const history = useNavigate();
+  const dispatch = useDispatch();
+
+  const navigate = useNavigate();
   const [loginState, setLoginState] = useState(fieldsState);
 
   const handleChange = (e) => {
@@ -38,12 +41,13 @@ export default function Login() {
         },
         { withCredentials: true }
       );
-      console.log(data);
       const { success, message } = data;
       if (success) {
+        dispatch(setIsLoggedin(true));
         handleSuccess(message);
+        localStorage.setItem("login-token", data);
         setTimeout(() => {
-          history.push("/");
+          navigate("/");
         }, 1000);
       } else {
         handleError(message);

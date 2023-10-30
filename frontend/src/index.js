@@ -12,7 +12,6 @@ import App from "./App";
 
 import "./index.css";
 
-// Redux Store
 const store = configureStore({
   reducer: {
     global: globalReducer,
@@ -22,7 +21,6 @@ const store = configureStore({
   middleware: (getDefault) => getDefault().concat(api.middleware),
 });
 setupListeners(store.dispatch);
-
 // Rendering App
 createRoot(document.getElementById("root")).render(
   <Provider store={store}>

@@ -118,3 +118,12 @@ footer .last i {
   margin-top: 35px;
   text-align: center;
 }
+
+.footer-logo {
+  margin: auto;
+}
+
+li, h3, h4 {
+  color: black;
+}
+

@@ -4,7 +4,7 @@
 import Layout from "./admin/layout";
 import Dashboard from "./admin/dashboard";
 import Products from "./admin/products";
-import Customers from "./admin/customers";
+import Users from "./admin/users";
 import Transactions from "./admin/transactions";
 import Geography from "./admin/geography";
 import Overview from "./admin/overview";
@@ -32,7 +32,7 @@ export {
   Layout,
   Dashboard,
   Products,
-  Customers,
+  Users,
   Transactions,
   Geography,
   Overview,

@@ -9,8 +9,7 @@ const {
 const router = express.Router();
 
 // Routes
-router.post("/", userVerification);
 router.get("/admins", getAdmins);
 router.get("/performance/:id", getUserPerformance);
 
-module.exports.router;
+module.exports = router;

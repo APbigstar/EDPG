@@ -316,7 +316,7 @@ export const blog = [
   },
   {
     id: 3,
-    type: "Prashanth Chandrasekar",
+    type: "Prashanth Chandras",
     date: "October 16, 2023",
     com: "10 COMMENTS ",
     title: "A Message from Prashanth Chandrasekar, CEO Stack Overflow",
@@ -379,7 +379,7 @@ export const loginFields = [
   {
     labelText: "Email address",
     labelFor: "email-address",
-    id: "email-address",
+    id: "email",
     name: "email",
     type: "email",
     autoComplete: "email",
@@ -412,7 +412,7 @@ export const signupFields = [
   {
     labelText: "Email address",
     labelFor: "email-address",
-    id: "email-address",
+    id: "email",
     name: "email",
     type: "email",
     autoComplete: "email",

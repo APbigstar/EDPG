@@ -31,4 +31,4 @@ const OverallStatSchema = new mongoose.Schema(
 
 const OverallStat = mongoose.model("OverallStat", OverallStatSchema);
 
-module.exports.OverallStat;
+module.exports = OverallStat;

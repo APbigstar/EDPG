@@ -2,7 +2,6 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const cors = require("cors");
-const dotenv = require("dotenv");
 const helmet = require("helmet");
 const morgan = require("morgan");
 
@@ -15,7 +14,10 @@ const generalRoutes = require("./src/routes/general.js");
 const managementRoutes = require("./src/routes/management.js");
 const salesRoutes = require("./src/routes/sales.js");
 
-dotenv.config();
+require("dotenv").config({ path: ".env" });
+
+console.log(process.env.MONGO_URL);
+
 const app = express();
 app.use(express.json());
 // app.use(rateLimiter);
@@ -24,11 +26,16 @@ app.use(helmet.crossOriginResourcePolicy({ policy: "cross-origin" }));
 app.use(morgan("common"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(cors());
+const corsOptions = {
+  origin: "http://localhost:3000",
+  credentials: true,
+  optionSuccessStatus: 200,
+};
+app.use(cors(corsOptions));
 
 const PORT = process.env.PORT || 9000;
 mongoose
-  .connect(process.env.MONGODB_URL, {
+  .connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })

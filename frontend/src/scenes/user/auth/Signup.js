@@ -1,12 +1,9 @@
 import { useState } from "react";
 import { signupFields } from "../../dummydata";
-import FormAction from "./FormAction";
 import Input from "./Input";
 import { Link, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import axios from "axios";
-import { useSelector, useDispatch } from "react-redux";
-import { setLoginState } from "../../../features/auth/auth";
 
 const fields = signupFields;
 let fieldsState = {};
@@ -14,9 +11,7 @@ let fieldsState = {};
 fields.forEach((field) => (fieldsState[field.id] = ""));
 
 export default function Signup() {
-  const dispatch = useDispatch();
-
-  const history = useNavigate();
+  const navigate = useNavigate();
 
   const [signupState, setSignupState] = useState(fieldsState);
 
@@ -33,7 +28,6 @@ export default function Signup() {
     });
 
   const handleSubmit = async (e) => {
-    dispatch(setLoginState());
     e.preventDefault();
     try {
       const { data } = await axios.post(
@@ -45,12 +39,12 @@ export default function Signup() {
       );
       const { success, message } = data;
       if (success) {
-        handleSuccess(message);
+        // handleSuccess(message);
         setTimeout(() => {
-          history.push("/signin");
+          navigate("/signin");
         }, 1000);
       } else {
-        handleError(message);
+        // handleError(message);
       }
     } catch (error) {
       console.log(error);
@@ -87,7 +81,6 @@ export default function Signup() {
               style={{ background: "#1eb2a6" }}
               onClick={handleSubmit}
             >
-              {/* <FormAction handleSubmit={handleSubmit} text="Signup" /> */}
               Sign Up
             </button>
             <Link to="/signin">

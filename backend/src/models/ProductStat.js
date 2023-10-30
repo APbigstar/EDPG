@@ -27,4 +27,4 @@ const ProductStatSchema = new mongoose.Schema(
 
 const ProductStat = mongoose.model("ProductStat", ProductStatSchema);
 
-module.exports.ProductStat;
+module.exports = ProductStat;

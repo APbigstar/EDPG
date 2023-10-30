@@ -3,16 +3,14 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 // Backend Api
 export const api = createApi({
   baseQuery: fetchBaseQuery({
-    baseUrl:
-      process.env.REACT_APP_BASE_URL ||
-      "http://localhost:5001",
+    baseUrl: process.env.REACT_APP_BASE_URL || "http://localhost:5000",
   }), // base url
   reducerPath: "adminApi",
   // tags
   tagTypes: [
     "User",
     "Producs",
-    "Customers",
+    "Users",
     "Transactions",
     "Geography",
     "Sales",
@@ -30,9 +28,9 @@ export const api = createApi({
       query: () => "client/products",
       providesTags: ["Products"],
     }),
-    getCustomers: build.query({
-      query: () => "client/customers",
-      providesTags: ["Customers"],
+    getUsers: build.query({
+      query: () => "client/users",
+      providesTags: ["Users"],
     }),
     getTransactions: build.query({
       query: ({ page, pageSize, sort, search }) => ({
@@ -62,6 +60,19 @@ export const api = createApi({
       query: () => "general/dashboard",
       providesTags: ["Dashboard"],
     }),
+    deleteUser: build.mutation({
+      query: (id) => ({
+        url: `users/${id}`,
+        method: "DELETE",
+      }),
+    }),
+    updateUser: build.mutation({
+      query: (id, data) => ({
+        url: `users/${id}`,
+        method: "PUT",
+        body: data,
+      }),
+    }),
   }),
 });
 
@@ -69,11 +80,13 @@ export const api = createApi({
 export const {
   useGetUserQuery,
   useGetProductsQuery,
-  useGetCustomersQuery,
+  useGetUsersQuery,
   useGetTransactionsQuery,
   useGetGeographyQuery,
   useGetSalesQuery,
   useGetAdminsQuery,
   useGetUserPerformanceQuery,
   useGetDashboardQuery,
+  useDeleteUserMutation,
+  useUpdateUserMutation,
 } = api;
